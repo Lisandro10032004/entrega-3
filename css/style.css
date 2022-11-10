@@ -1,0 +1,104 @@
+.titulo {
+  text-align: center;
+  background-image: linear-gradient(to left, blue, red);
+  color: rgb(255, 255, 255);
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.card-container .card {
+  background-color: rgb(255, 255, 255);
+  width: 80%;
+  height: auto;
+}
+.card-container .card img {
+  width: 70%;
+  margin: auto;
+}
+.card-container .card:hover {
+  box-shadow: 1px 1px 10px 1px;
+}
+
+.anuncio-televisor {
+  background-image: linear-gradient(to left, blue, red);
+  color: rgb(255, 255, 255);
+  height: 80px;
+  font-size: 30px;
+  padding-top: 20px;
+  border-radius: 10px;
+}
+
+@media (min-width: 1390px) {
+  .card-container {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+@media (max-width: 750px) {
+  .card-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .card-container .card {
+    width: 86%;
+    height: auto;
+  }
+}
+@media (max-width: 1000px) {
+  .card-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+nav a img {
+  width: 100px;
+  background-image: linear-gradient(to left, rgb(244, 108, 108), rgb(98, 98, 248));
+  border-radius: 150px;
+}
+
+.container-card__ayuda .card-ayuda {
+  background-color: rgb(255, 255, 255);
+  border: solid 1px black;
+  height: 100px;
+  margin: 10px;
+  width: 47%;
+  text-align: start;
+  border: solid 1px rgb(110, 196, 246);
+}
+.container-card__ayuda .card-ayuda i {
+  font-size: 30px;
+  margin-top: 10%;
+}
+
+.card-ayuda:hover {
+  background-color: rgb(110, 196, 246);
+  color: rgb(255, 255, 255);
+  border: solid black 1px;
+}
+
+@media (max-width: 770px) {
+  .container-card__ayuda .card-ayuda {
+    width: 90%;
+  }
+}
+form input {
+  height: 50px;
+}
+
+.body {
+  background-color: rgb(240, 240, 240);
+}
+
+footer {
+  background-color: #fff;
+}
+footer i {
+  font-size: 30px;
+  margin: 5%;
+}
+footer i:hover {
+  color: blue;
+}
+
+/*# sourceMappingURL=style.css.map */

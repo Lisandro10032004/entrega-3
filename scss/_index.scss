@@ -1,0 +1,63 @@
+
+.titulo {
+    text-align: center;
+    background-image: linear-gradient(to left, blue, red);
+    color: $color-primary;
+    border-radius: 10px;
+    margin-top: 10px;
+  }
+  
+
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  
+    .card {
+      background-color: $color-primary;
+      width: 80%;
+      height: auto;
+  
+      img {
+        width: 70%;
+        margin: auto;
+      }
+  
+      &:hover {
+        box-shadow: 1px 1px 10px 1px;
+      }
+    }
+  }
+
+  
+.anuncio-televisor {
+    background-image: linear-gradient(to left, blue, red);
+    color: $color-primary;
+    height: 80px;
+    font-size: 30px;
+    padding-top: 20px;
+    border-radius: 10px;
+  }
+  
+  @media (min-width: 1390px) {
+    .card-container {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+  
+  @media (max-width: 750px) {
+    .card-container {
+      grid-template-columns: repeat(1, 1fr);
+  
+      .card {
+        width: 86%;
+        height: auto;
+      }
+    }
+  }
+
+  @media (max-width: 1000px) {
+    .card-container {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
