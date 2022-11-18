@@ -7,16 +7,24 @@
     margin-top: 10px;
   }
   
+  .carrusel{
+    max-width: 1000px;
+    
+    
+  }
 
 
 .card-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+   
+
   
     .card {
       background-color: $color-primary;
       width: 80%;
       height: auto;
+      max-width: 239px;
   
       img {
         width: 70%;
@@ -30,7 +38,7 @@
   }
 
   
-.anuncio-televisor {
+.anuncio-televisor {          
     background-image: linear-gradient(to left, blue, red);
     color: $color-primary;
     height: 80px;
@@ -44,6 +52,8 @@
       grid-template-columns: repeat(4, 1fr);
     }
   }
+
+  
   
   @media (max-width: 750px) {
     .card-container {
@@ -56,8 +66,3 @@
     }
   }
 
-  @media (max-width: 1000px) {
-    .card-container {
-      grid-template-columns: repeat(2, 1fr);
-    }
-  }
