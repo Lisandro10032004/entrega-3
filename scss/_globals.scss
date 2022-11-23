@@ -5,10 +5,13 @@
 
   footer{
   background-color: #fff;
-    
+   
+  h3{
+    margin-top: 200px;
+  }
     
     i{
-      font-size: 30px;
+      font-size: 70px;
       margin: 5%;
      
 
@@ -17,6 +20,20 @@
     i:hover{
       color: blue;
     }
-  
+  .description{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
 
+    .lorem{
+      font-size: 20px;
+    }
+  }
+
+  }
+
+  @media(max-width: 500px ){
+    .lorem2{
+      display: none;
+    }
   }

@@ -53,9 +53,16 @@
     }
   }
 
+  @media (max-width: 900px) {
+    .card-container {
+      grid-template-columns: repeat(2, 1fr);
+  
+    
+    }
+  }
   
   
-  @media (max-width: 750px) {
+  @media (max-width: 500px) {
     .card-container {
       grid-template-columns: repeat(1, 1fr);
   
@@ -65,4 +72,3 @@
       }
     }
   }
-
