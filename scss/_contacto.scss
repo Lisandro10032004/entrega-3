@@ -1,33 +1,27 @@
-.contacto{
+.contacto {
+  fieldset {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+   
 
-
- fieldset{
-
-display: flex;
-flex-direction: column;
-align-content: center;
-max-width: 700px;
-
-  input{
-  
-    height: 50px;
- 
+    input {
+      height: 50px;
+    }
   }
 }
 
-
- }
-
-
-
- 
 .boton {
   min-width: 100px;
   display: flex;
-  
+justify-content: center;
+}
 
-} 
- 
-
-
- 
+@media (min-width: 1000px) {
+  .contacto {
+    fieldset {
+      padding-left: 20%;
+      padding-right: 20%;
+    }
+  }
+}
